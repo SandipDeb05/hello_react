@@ -41,7 +41,9 @@ const App = () => {
 
   return (
     <div>
-      <h2>Hey Sandip, Happy Learning 👋</h2>
+      <h2 style={{ textAlign: "center", color: "#fff" }}>
+        Hey Sandip, Happy Learning 👋
+      </h2>
       <Expenses expenses={expense} />
     </div>
   );
