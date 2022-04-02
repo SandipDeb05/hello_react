@@ -9,7 +9,7 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-    setTitle("Updated!🎉"); // updating function of useState() hook, force react to re-render the whole component, with the updated state
+    setTitle("Updated!🎉"); // updating function of useState() hook, force react to re-render the whole component, with the updated state,
   };
 
   return (

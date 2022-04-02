@@ -1,5 +1,6 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 import "./App.css";
 
@@ -44,6 +45,7 @@ const App = () => {
       <h2 style={{ textAlign: "center", color: "#fff" }}>
         Hey Sandip, Happy Learning 👋
       </h2>
+      <NewExpense />
       <Expenses expenses={expense} />
     </div>
   );
