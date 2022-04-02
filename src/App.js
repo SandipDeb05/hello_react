@@ -1,4 +1,5 @@
-import ExpenseItem from "./components/ExpenseItem.jsx";
+import Expenses from "./components/Expenses";
+
 import "./App.css";
 
 function App() {
@@ -32,17 +33,7 @@ function App() {
   return (
     <div>
       <h2>Hey Sandip, Happy Learning 👋</h2>
-      <p>This is React JS</p>
-      {expense.map((el) => {
-        return (
-          <ExpenseItem
-            key={el.id}
-            title={el.title}
-            amount={el.amount}
-            date={el.date}
-          />
-        );
-      })}
+      <Expenses expenses={expense} />
     </div>
   );
 }
