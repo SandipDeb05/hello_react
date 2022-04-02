@@ -32,6 +32,10 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log(expense, "app.js");
+  };
+
   // TODO React JSX under the hood
   // return React.createElement(
   //   "div",
@@ -45,7 +49,7 @@ const App = () => {
       <h2 style={{ textAlign: "center", color: "#fff" }}>
         Hey Sandip, Happy Learning 👋
       </h2>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expense} />
     </div>
   );
