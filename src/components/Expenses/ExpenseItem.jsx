@@ -9,19 +9,21 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
-    setTitle("Updated!🎉"); // updating function of useState() hook, force react to re-render the whole component, with the updated state
+    setTitle("Updated!🎉"); // updating function of useState() hook, force react to re-render the whole component, with the updated state,
   };
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={date} />
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={date} />
 
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">${amount}</div>
-      </div>
-      <button onClick={clickHandler}>Change Title</button>
-    </Card>
+        <div className="expense-item__description">
+          <h2>{title}</h2>
+          <div className="expense-item__price">${amount}</div>
+        </div>
+        <button onClick={clickHandler}>Change Title</button>
+      </Card>
+    </li>
   );
 };
 export default ExpenseItem;
