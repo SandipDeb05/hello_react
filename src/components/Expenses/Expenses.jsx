@@ -7,13 +7,15 @@ import ExpensesChart from "./ExpensesChart";
 
 const Expenses = (props) => {
   const { expenses } = props;
-  const [expenseFilterData, setExpenseFilterData] = useState(2020);
+  const [expenseFilterData, setExpenseFilterData] = useState("all");
 
   const expenseFilterHandler = (selectedYear) => {
     setExpenseFilterData(selectedYear * 1);
   };
   const filteredData = expenses.filter((el) => {
-    return el.date.getFullYear() === expenseFilterData;
+    return expenseFilterData === "all"
+      ? expenses
+      : el.date.getFullYear() === expenseFilterData;
   });
 
   // TODO Keep your return JSX clean and simple

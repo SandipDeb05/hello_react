@@ -1,9 +1,11 @@
 .new-expense__controls {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .new-expense__control label {
@@ -17,7 +19,7 @@
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #ccc;
-  width: 20rem;
+  width: 15rem;
   max-width: 100%;
 }
 
